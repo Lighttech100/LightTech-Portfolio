@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap-5.2.0/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="script.js"> -->
+    <!-- <link rel="stylesheet" href="bootstrap-5.2.0/dist/css/bootstrap.min.css"> -->
+    <title>LightTech-portfolio</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+<!-- nav start -->
+
+    <!-- <nav>
+        <a href="#" class="logo">
+            <h2><span>L</span>ight<span>T</span>ech</h2>
+        </a>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </nav> -->
+
+
+
+    <nav>
+        <div class="containeres">
+        <div class="nav">
+            <h1><a href="#home">L<span>ight</span>T<span>ech</span></a></h1>
+        
+        
+            <ul class="nav-menu">
+               <li><a href="#home" class="nav-link"> Home</a></li>
+               <li><a href="#about" class="nav-link"> About</a></li>
+               <li><a href="#servives" class="nav-link"> Services</a></li>       
+            </ul>
+        
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="hambuger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        </div>
+    </div>
+        </nav>
+        
+        
+        <script>
+            const hambuger = document.querySelector('.hambuger');
+            const navMenu = document.querySelector('.nav-menu');
+        
+            hambuger.addEventListener("click", mobileMenu);
+        
+            function mobileMenu() {
+                hambuger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            }
+        
+            const navLink = document.querySelectorAll('.nav-menu');
+            navLink.forEach((n) => n.addEventListener("click", closeMenu));
+        
+            function closeMenu(){
+                hambuger.closeMenu.remove("active");
+                navMenu.closeMenu.remove("active");
+            }
+        </script>
+<!-- nav end -->
+
+<!-- start showcase -->
+<div class="content-wrapper" >
+    <div class="container">
+            <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+    <div class="content-left">
+        <p class="loads">Hello</p>
+        <div class="txt-content">
+           <div class="normal_txt">I'am a </div>
+           <div class="change_txt"> Front End developer</div>
+        </div>
+        <p>I have been working as a Digital Marketer/Full Stack Developer for the past two years and have a strong foundation in both front-end and back-end development. I am confident that I have the skills and experience to do exceedenly excellent in any job am been given.</p>
+        <button type="submit"><a href="#contact"> Hire me</a></button>
+   <button type="submit"><a href="img/CV new.pdf" download>Download CV</a></button>
+    </div>
+</div>
+<div class="col-12 col-sm-12 col-md-12 col-lg-5">
+    <div class="content-right">
+        <img src="img/My pic 2.jpg" alt="">
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- end showcase -->
+<!-- skills start -->
+<div class="skills wow slideInRight">
+    <h2>Skills</h2>
+    <div><i class="fa-brands fa-html5"></i></div>
+    <div><i class="fa-brands fa-css3-alt"></i></div>
+    <div><i class="fa-brands fa-bootstrap"></i></div>
+    <div><i class="fa-brands fa-php"></i></div>
+    <div><i class="fa-brands fa-js"></i></div>
+</div>
+</div>
+
+<!-- skills end -->
+
+
+<!-- ++++++++++++about++++++++++++++ -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                <img src="img/My pic.jpg" width="90%" height="90%">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                <small style="color: #0065c4;"><span style="font-size: 20px; color: blue;">L</span>ight<span style="font-size: 20px; color: blue;">T</span>ech</small>
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is light and i am an experienced website developer/digital marketer with over 2 years of  experience specializing in Front/back end development/online marketing. Light  creates relevant and websites that enhance a company's brand recognition. His unique experience and creative mindset help companies remain current in a consistently evolving market.</p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab(skills)">Skills</p>
+                <p class="tab-links" onclick="opentab(experience)">Experience</p>
+                <p class="tab-links" onclick="opentab(education)">Education</p>
+              </div>
+              <div class="tab-content active-tab" id="skills">
+                <ul>
+                    <li><span>Web Development</span><br>Designing Web</li>
+                    <li><span>App Development</span><br>Building  Web</li>
+                </ul>
+              </div>
+              <div class="tab-content" id="experience">
+                <ul>
+                    <li><span>u1/ux</span><br>Designing Web</li>
+                    <li><span>Web Development</span><br>Designing Web</li>
+                    <li><span>App Development</span><br>Building  Web</li>
+                </ul>
+              </div>
+              <div class="tab-content" id="education">
+                <ul>
+                    <li><span>u1/ux</span><br>Designing Web</li>
+                    <li><span>Web Development</span><br>Designing Web</li>
+                    <li><span>App Development</span><br>Building  Web</li>
+                </ul>
+              </div>
+                </div>
+        </div>
+    </div>
+</section>
+<!-- ++++++++++++about++++++++++++++ -->
+
+
+
+
+
+
+
+
+
+<!-- +++++++++++++++++services++++++++++++++++++++ -->
+<div id="servives">
+  <div class="container">
+    <h1>My Services</h1>
+    <div class="services-List">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Front End Developer</h2>
+            <p>The front end is what you see on the screen — menus, graphics, and other features. You’ll also see the front end called client-side because that’s who is interacting with it. Front-end developers are primarily responsible for the site’s appearance.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-php"></i>
+            <h2>Back End Developer</h2>
+            <p>Back-end developers work behind the scenes on the server-side of a website. They use various programming languages to make things happen, whether it’s going to a thank-you webpage for signing up for a newsletter or adding contact information to a database. Their work focuses on a site’s functionality.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-thin fa-hashtag"></i>
+            <h2>Digital Marketer</h2>
+            <p>My work as a freelance digital marketer is responsible for using a variety of digital channels to generate leads and build brand awareness. Digital channels include: Company websites, Social media networks such as Facebook, YouTube, and Instagram e.t.c Search engines including Google and Bing, Email marketing, Mobile apps like TikTok and WhatsApp, Online display ads, Blogs. Beyond this, i also use measurable analytics to identify weaknesses and find ways to improve performance across these channels. In this role, i can be responsible for all aspects of a company's digital strategy or just focus on one.</p>
+            <a href="#">Learn more</a>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- +++++++++++++++++services++++++++++++++++++++ -->
+
+
+<!-- ++++++++++++++++++portfolio+++++++++++++++ -->
+<div id="portfolio">
+    <div class="container">
+        <h1>My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/Hotel.jpg" alt="">
+                <div class="layer">
+                    <h3>Hotel web site</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                      <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="img/barber.jpg" alt="">
+                <div class="layer">
+                    <h3>Barbing saloon web site</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                      <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="img/fitness.jpg" alt="">
+                <div class="layer">
+                    <h3>Fitness web site</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                      <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ++++++++++++++++++portfolio+++++++++++++++ -->
+
+<!-- +++++++++++++++++++++++++++++++contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="content-left">
+                <h1>Reach Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> prospererhunmwunse9@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 08118269049</p>
+                <div class="socialicons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="img/CV new.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="content-rightt">
+                <form action="send.php" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- +++++++++++++++++++++++++++++++contact -->
+
+<!-- copyright -->
+<div class="copyright">
+    <p>Copyright Light. Made with <i class="fa-solid fa-heart"></i> by LightTech</p>
+</div>
+<!-- copyright -->
+
+<!-- smooth scroll -->
+<script src="sjs/smooth-scroll.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
+<!-- animatio -->
+<script src="sjs/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
+<script src="script.js"></script>
+<script src="bootstrap-5.2.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
